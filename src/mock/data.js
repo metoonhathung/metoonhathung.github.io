@@ -3,7 +3,7 @@ import { withPrefix } from 'gatsby';
 
 // HEAD DATA
 export const headData = {
-  title: 'Hung Tran | Developer', // e.g: 'Name | Developer'
+  title: 'Hung Tran | Software Engineer', // e.g: 'Name | Developer'
   lang: 'en', // e.g: en, es, fr, jp
   description: 'Portfolio of metoonhathung', // e.g: Welcome to my website
 };
@@ -13,7 +13,7 @@ export const heroData = {
   title: 'Hi! My name is',
   name: 'Hung Tran',
   subtitle: 'I am ',
-  typing: ['a software engineer.', 'a positive thinker.', 'an ambivert.'],
+  typing: ['self-motivated.', 'detail-oriented.', 'results-driven.'],
   cta: 'Know more',
 };
 
@@ -21,11 +21,11 @@ export const heroData = {
 export const aboutData = {
   img: 'avatar.jpg',
   paragraphOne:
-    "Hello! I am Hung and I'm from Hanoi, Vietnam. I am currently a junior at the University of Rochester majoring in Computer Science.",
+    'I am a recent graduate with a major in Computer Science from Rutgers University-New Brunswick. My passion lies in web technologies, machine learning, and everything in between. This enthusiasm has driven me to acquire expertise in frontend technologies like React, Redux/Zusand, Material-UI, and TypeScript, as well as backend technologies such as Spring Boot, Flask/FastAPI, NestJS/Express, and databases like PostgreSQL and MongoDB. Additionally, I have gained proficiency in machine learning through tools like PyTorch and Pandas.',
   paragraphTwo:
-    'I have always been passionate about web applications, game development, artificial intelligence, and everything in between. I would really love the opportunities to work in those respective fields.',
+    'During the past three summers, I had the opportunity to apply my skills in both frontend and backend development while working as a software engineering intern at VinBrain, VinBigData, and EOG Resources.',
   paragraphThree:
-    'In my free time, I enjoy coding, singing, listening to music, watching movies, playing sports and games. I consider myself as an ambivert and a positive thinker.',
+    "I am eager to embark on a career as a software engineer, with a particular interest in roles that encompass full-stack development, backend engineering, frontend development, or machine learning. You can explore my portfolio at https://metoonhathung.github.io/ to see some of my previous projects. I am actively seeking new graduate positions in these fields. If you are interested in collaborating with me, please don't hesitate to reach out.",
   resume: withPrefix('resume.pdf'), // if no resume, the button will not show up
 };
 
@@ -33,39 +33,57 @@ export const aboutData = {
 export const projectsData = [
   {
     id: nanoid(),
+    img: 'assistant.png',
+    title: 'Virtual Assistant',
+    info: `Description: A chatbot web application capable of answering question, generating music, generating image, and analyzing document. Provide support for Automatic Speech Recognition and Text-To-Speech.`,
+    info2: 'Technologies: LangChain, Streamlit',
+    url: 'https://metoonhathung-virtual-assistant.streamlit.app/',
+    repo: 'https://github.com/metoonhathung/virtual-assistant', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
+    img: 'music.png',
+    title: 'Music Generation',
+    info: `Description: A Python application to generate songs using Deep Learning models.`,
+    info2: 'Technologies: PyTorch, FastAPI, Streamlit',
+    url: 'https://metoonhathung-music-generation.streamlit.app/',
+    repo: 'https://github.com/metoonhathung/music-generation', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
+    img: 'moviez.png',
+    title: 'Moviez',
+    info: `Description: An iOS application to explore and bookmark your favorite movies.`,
+    info2: 'Technologies: Swift, Web Service, CoreData, Storyboard',
+    url: 'https://youtu.be/XSoK2bLKMgg',
+    repo: 'https://github.com/metoonhathung/moviez-ios', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
+    img: 'chess.png',
+    title: 'Chess',
+    info: `Description: An Android application to play Chess game. Single player (Minimax AI) or Multiplayer.`,
+    info2: 'Technologies: Java, Node.js, Express, Socket.io',
+    url: 'https://youtu.be/TWNf3bVXgBk',
+    repo: 'https://github.com/metoonhathung/chess-android', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
     img: 'battleship.png',
-    title: 'Multiplayer Battleship',
-    info: `Description: A web application to play Battleship game with two options: Single player (with AI algorithm using probability distribution and DFS) and Multiplayer (between 2 people).`,
-    info2: 'Technologies: JavasScript, HTML, CSS, Node.js, Express, Socket.io',
-    url: 'https://multiplayer-battleship.herokuapp.com/',
+    title: 'Battleship',
+    info: `Description: A web application to play Battleship game. Single player (probability distribution AI) or Multiplayer.`,
+    info2: 'Technologies: Node.js, Express, Socket.io, JavaScript, HTML, CSS',
+    url: 'https://battleship-d171.onrender.com/',
     repo: 'https://github.com/metoonhathung/battleship', // if no repo, the button will not show up
   },
   {
     id: nanoid(),
-    img: 'neuralnetwork.png',
-    title: 'Neural Network',
-    info: `Description: A web application to demonstrate Neural Network: prepare data, train model and evaluate model. Neural Network is implemented using Gradient Descent with one hidden layer. Data is collected and processed from user's canvas drawings.`,
-    info2: 'Technologies: Javascript, HTML, CSS, Bootstrap',
-    url: 'https://metoonhathung.github.io/neuralnetwork/',
-    repo: 'https://github.com/metoonhathung/neuralnetwork/', // if no repo, the button will not show up
-  },
-  {
-    id: nanoid(),
-    img: 'checkers.png',
-    title: 'Checkers AI',
-    info: `Description: A game of Checkers played in the console with two options: player versus player and player versus computer. Implemented using AI algorithms such as Minimax, heuristic Minimax and Alpha-Beta pruning with customizable depth of search.`,
-    info2: 'Technologies: Java',
-    url: 'https://replit.com/@metoonhathung/checkers-ai',
-    repo: 'https://github.com/metoonhathung/checkers-ai', // if no repo, the button will not show up
-  },
-  {
-    id: nanoid(),
-    img: 'sortvisual.png',
+    img: 'sort.png',
     title: 'Sorting Visualization',
-    info: `Description: A web application to visualize different comparison sorting algorithms such as Bubble Sort, Selection Sort, Insertion Sort, Merge Sort, Quick Sort, Heap Sort and non-comparison such as Radix Sort. Input size and animation speed is customizable by user.`,
-    info2: 'Technologies: Javascript, HTML, CSS, Bootstrap, p5.js',
-    url: 'https://metoonhathung.github.io/sortvisual/',
-    repo: 'https://github.com/metoonhathung/sortvisual', // if no repo, the button will not show up
+    info: `Description: A web application to visualize different sorting algorithms.`,
+    info2: 'Technologies: p5.js, JavaScript, HTML, CSS, Bootstrap',
+    url: 'https://metoonhathung.github.io/sort-visual/',
+    repo: 'https://github.com/metoonhathung/sort-visual', // if no repo, the button will not show up
   },
 ];
 
@@ -81,8 +99,8 @@ export const footerData = {
   networks: [
     {
       id: nanoid(),
-      name: 'facebook',
-      url: 'https://www.facebook.com/metoonhathung',
+      name: 'github',
+      url: 'https://github.com/metoonhathung',
     },
     {
       id: nanoid(),
@@ -91,8 +109,13 @@ export const footerData = {
     },
     {
       id: nanoid(),
-      name: 'github',
-      url: 'https://github.com/metoonhathung',
+      name: 'facebook',
+      url: 'https://www.facebook.com/metoonhathung',
+    },
+    {
+      id: nanoid(),
+      name: 'youtube',
+      url: 'https://www.youtube.com/@metoonhathung',
     },
   ],
 };

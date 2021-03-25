@@ -1,9 +1,7 @@
 {
-  "homepage": "https://metoonhathung.github.io/",
   "name": "metoonhathung",
-  "description": "Hung Portfolio",
-  "version": "0.1.0",
-  "license": "MIT",
+  "version": "1.0.0",
+  "description": "Personal Portfolio",
   "scripts": {
     "deploy": "gatsby build && gh-pages -d public -b master",
     "build": "gatsby build",
@@ -56,11 +54,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/metoonhathung/metoonhathung.github.io.git"
+    "url": "git+https://github.com/metoonhathung/metoonhathung.github.io.git"
   },
+  "author": "Hung Tran",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/metoonhathung/metoonhathung.github.io/issues"
   },
+  "homepage": "https://github.com/metoonhathung/metoonhathung.github.io#readme",
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"

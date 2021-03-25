@@ -33,12 +33,21 @@ export const aboutData = {
 export const projectsData = [
   {
     id: nanoid(),
+    img: 'patients.png',
+    title: 'Patients Manager',
+    info: `Description: A fullstack web application to manage patients with CRUD operations through REST API.`,
+    info2: 'Technologies: Spring Boot, PostgreSQL, React, Bootstrap',
+    url: 'https://patients-frontend.herokuapp.com/',
+    repo: 'https://github.com/metoonhathung/patients-frontend/', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
     img: 'battleship.png',
     title: 'Multiplayer Battleship',
     info: `Description: A web application to play Battleship game with two options: Single player (with AI algorithm using probability distribution and DFS) and Multiplayer (between 2 people).`,
-    info2: 'Technologies: JavasScript, HTML, CSS, Node.js, Express, Socket.io',
+    info2: 'Technologies: Node.js, Express, Socket.io, JavasScript, HTML, CSS',
     url: 'https://multiplayer-battleship.herokuapp.com/',
-    repo: 'https://github.com/metoonhathung/battleship', // if no repo, the button will not show up
+    repo: 'https://github.com/metoonhathung/battleship/', // if no repo, the button will not show up
   },
   {
     id: nanoid(),
@@ -60,12 +69,21 @@ export const projectsData = [
   },
   {
     id: nanoid(),
+    img: 'virtualassistant.png',
+    title: 'Virtual Assistant',
+    info: `Description: Virtual Assistant with voice/text input/output. Utilize APIs like Wolfram Alpha, Wikipedia, OpenWeatherMap, Oxford Dictionary, YouTube, Google Maps, Google Translate, Face, MapQuest, Joke. Able to answer questions, search articles, check weather, search dictionary, play videos, show maps, translate texts, search google, analyze webcam, show location, show time, show date, tell jokes.`,
+    info2: 'Technologies: AJAX, Javascript, HTML, CSS, Bootstrap',
+    url: 'https://metoonhathung.github.io/virtualassistant/',
+    repo: 'https://github.com/metoonhathung/virtualassistant/', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
     img: 'sortvisual.png',
     title: 'Sorting Visualization',
     info: `Description: A web application to visualize different comparison sorting algorithms such as Bubble Sort, Selection Sort, Insertion Sort, Merge Sort, Quick Sort, Heap Sort and non-comparison such as Radix Sort. Input size and animation speed is customizable by user.`,
-    info2: 'Technologies: Javascript, HTML, CSS, Bootstrap, p5.js',
+    info2: 'Technologies: p5.js, Javascript, HTML, CSS, Bootstrap',
     url: 'https://metoonhathung.github.io/sortvisual/',
-    repo: 'https://github.com/metoonhathung/sortvisual', // if no repo, the button will not show up
+    repo: 'https://github.com/metoonhathung/sortvisual/', // if no repo, the button will not show up
   },
 ];
 

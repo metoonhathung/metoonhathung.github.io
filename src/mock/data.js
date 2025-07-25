@@ -33,12 +33,12 @@ export const aboutData = {
 export const projectsData = [
   {
     id: nanoid(),
-    img: 'assistant.png',
-    title: 'Virtual Assistant',
-    info: `Description: A chatbot web application capable of answering question, generating music, generating image, and analyzing document. Provide support for Automatic Speech Recognition and Text-To-Speech.`,
-    info2: 'Technologies: LangChain, Streamlit',
-    url: 'https://metoonhathung-virtual-assistant.streamlit.app/',
-    repo: 'https://github.com/metoonhathung/virtual-assistant', // if no repo, the button will not show up
+    img: 'ai.png',
+    title: 'Multi Agent AI',
+    info: `Description: A multi-agent AI chatbot application capable of searching online and creating/editing images.`,
+    info2: 'Streamlit, FastAPI, Supabase, LangGraph, crewAI, ADK, A2A, MCP',
+    url: 'https://multi-agent-ai.streamlit.app/',
+    repo: 'https://github.com/metoonhathung/ai-agent', // if no repo, the button will not show up
   },
   {
     id: nanoid(),
